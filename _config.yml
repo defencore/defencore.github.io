@@ -1,0 +1,35 @@
+# Dependencies
+highlighter: rouge
+gems: [jekyll-paginate, jekyll-sitemap]
+
+# Permalinks
+permalink: pretty
+
+# Setup
+title: DEFENCORE
+tagline: 'DEFENCORE'
+description: 'security consultant for law enforcement agencies and security services'
+url: https://defencore.com
+baseurl:
+homepage_thumbnail:
+
+disqusid: defencore
+
+author:
+    name:      'Defencore'
+    twitter:   https://twitter.com/defencore
+    youtube:   https://www.youtube.com/channel/UCcAwjE_JoOQDCNXyDR5n01w
+    linkedin:  https://linkedin.com/in/defencore
+    gh:        https://github.com/defencore
+
+paginate:      5
+
+# Custom vars
+version:       2.1.0
+
+github:
+    repo:      https://github.com/defencore
+
+exclude:
+    - _posts/WORK_IN_PROGRESS
+    - HOWTO.md

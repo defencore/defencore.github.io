@@ -1,0 +1,41 @@
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="/pgp/defencore.acs.txt"><img src="/pgp/defencore.acs.qr" alt="PGP PUBLIC KEY" class="center"></a>
+      <h2 class="logo">
+        <a href="{{ site.url }}" >
+          {{ site.title }}
+        </a>
+      </h2>
+      <p class="lead">{{ site.description }}</p>
+    </div>
+
+    <nav class="sidebar-nav">
+
+{% comment %}
+      {% comment %}
+        The code below dynamically generates a sidebar nav of pages with
+        `layout: page` in the front-matter. See readme for usage.
+      {% endcomment %}
+
+      {% assign pages_list = site.pages %}
+      {% for node in pages_list %}
+        {% if node.title != null %}
+          {% if node.layout == "page" %}
+            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+{% endcomment %}
+
+      <a class="sidebar-nav-item" href="/archive/">[ Archive ]</a>
+      <a class="sidebar-nav-item" href="/contacts/">[ Contacts ]</a>
+      <hr>
+      <a class="sidebar-nav-item" href="{{ site.author.twitter }}" >Twitter</a>
+      <a class="sidebar-nav-item" href="{{ site.author.youtube }}">YouTube</a>
+      <a class="sidebar-nav-item" href="{{ site.author.linkedin }}">LinkedIn</a>
+      <a class="sidebar-nav-item" href="{{ site.author.gh }}">GitHub</a>
+    </nav>
+
+  </div>
+</div>
