@@ -6,8 +6,8 @@ gems: [jekyll-paginate, jekyll-sitemap]
 permalink: pretty
 
 # Setup
-title: DEFENCORE
-tagline: 'DEFENCORE'
+title: DEFENCORE™
+tagline: 'DEFENCORE™'
 description: 'security consultant'
 url: https://defencore.com
 baseurl:
@@ -16,7 +16,7 @@ homepage_thumbnail:
 disqusid: defencore
 
 author:
-    name:      'Defencore'
+    name:      'Defencore™'
     twitter:   https://twitter.com/defencore
     youtube:   https://www.youtube.com/channel/UCcAwjE_JoOQDCNXyDR5n01w
     linkedin:  https://linkedin.com/in/defencore
